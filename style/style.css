@@ -23,6 +23,10 @@
   --color-search-input:#8E8E8E;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   box-sizing: border-box;
 }
