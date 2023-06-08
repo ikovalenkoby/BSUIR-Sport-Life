@@ -110,6 +110,10 @@ a{
   padding: 13px 18px;
 }
 
+.phone_nav_burger{
+  display: none;
+}
+
 .main_nav_search_button{
   background-color: var(--color-dark-blue);
   width: 61px;
@@ -173,10 +177,10 @@ a{
   border: 1px solid var(--color-grey);
   justify-self: center;
   overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 8;
-    -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
 }
 
 .news_block_item_image{
@@ -185,7 +189,7 @@ a{
 
 .news_block_item_text{
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 100%;
   text-align: justify;
@@ -275,6 +279,8 @@ a{
   .anchor {
     height: 30px;
     width: 30px;
+    bottom: 37px;
+    right: 12px;
   }
   .header{
     font-size: 16px;
@@ -304,7 +310,7 @@ a{
   }
 
   .main_nav_search_input{
-    width: 148px;
+    width: 100px;
     font-size: 12px;
     line-height: 102.9%;
     padding: 9px 12px;
@@ -360,6 +366,7 @@ a{
   }
 
   .news_block_item{
+    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -373,6 +380,7 @@ a{
     font-size: 12px;
     line-height: 107.4%;
   }
+
   .footer_top{
     padding:49px 50px 15px 50px;
     gap: 28px;
@@ -380,15 +388,22 @@ a{
     line-height: 107.9%;
   }
 
+  .footer_bsuir_logo{
+    width: 67px;
+    height: 40px;
+  }
+
   .footer_anchors_list_item{
     margin-bottom: 9px;
   }
   .footer_info_list_item{
-    margin-bottom: 15px;
+    margin-bottom: 9px;
   }
 
   .footer_info_list_item_vk_logo{
     margin-left: 8px;
+    width: 21px;
+    height: 17px;
   }
 
   .footer_created_by{
@@ -399,5 +414,137 @@ a{
 }
 
 @media (max-width:767px) {
-  
+  .anchor {
+    height: 20px;
+    width: 20px;
+    bottom: 40px;
+    right: 10px;
+  }
+  .main_nav{
+    display: flex;
+    justify-content: space-between;
+    margin:0 20px;
+  }
+
+  .main_nav_list{
+    display: none;
+  }
+
+  .phone_nav_burger{
+    display: block;
+    background: none;
+    margin: 8px 0px;
+  }
+
+  .main_nav_search{
+    height: 22px;
+    margin:4px 0px;
+  }
+
+  .main_nav_search_input{
+    width: 75px;
+    font-size: 10px;
+    padding: 6px 9px;
+  }
+
+  .main_nav_search_button{
+    width: 27px;
+  }
+
+  .main_nav_search_button_image{
+    height:11px;
+    width: 11px;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .hero{
+    margin-bottom: 24px;
+  }
+
+  .hero_trapezoid{
+    border-top: 132px solid var(--trapezoid-color);
+    border-right: 86px solid transparent;
+    height: 0;
+    width: 86px;
+  }
+
+  .hero_trapezoid_text{
+    margin-top: -95px;
+    font-size: 12px;
+    line-height: 129.4%;
+    margin-left: 20px;
+  }
+
+  .hero_trapezoid_logo{
+    margin-top: -120px;
+    margin-left: 20px;
+    width: 33.27px;
+    height: 16.31px;
+  }
+
+  .news{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .news_block{
+    gap:16px 9px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    width: 100%;
+  }
+
+  .news_block_item_text{
+    font-size: 12px;
+    line-height: 100%;
+    margin:8px 8px 0px 8px;
+  }
+
+  .news_block_item{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+
+  .news_block_read_more_button{
+    margin: 22px auto;
+    padding: 6px 13px;
+    font-size: 9px;
+    line-height: 107.4%;
+  }
+
+  .footer_bsuir_logo{
+    width: 32px;
+    height: 19px;
+  }
+
+  .footer_top{
+    padding:26px 20px 6px 20px;
+    gap: 16px;
+    font-size: 10px;
+    line-height: 107.9%;
+  }
+
+  .footer_anchors_list_item{
+    margin-bottom: 4px;
+  }
+  .footer_info_list_item{
+    margin-bottom: 5px;
+  }
+
+  .footer_info_list_item_vk_logo{
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .footer_created_by{
+    font-size: 7px;
+    line-height: 8px;
+    padding-bottom: 4px;
+  }
 }
