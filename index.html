@@ -11,33 +11,40 @@
   <body class="main">
     <header class="header">
       <nav class="main_nav">
-        <ul class="main_nav_list">
+        <ul class="main_nav_list" id="menu">
           <li class="main_nav_dropdown">
             <p class="main_nav_list_item">Университет</p>
             <ul class="main_nav_dropdown_content">
-              <li class="main_nav_dropdown_item"><a href="#">Пункт 1</a></li>
-              <li class="main_nav_dropdown_item"><a href="#">Пункт 2</a></li>
-              <li class="main_nav_dropdown_item"><a href="#">Пункт 3</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">История</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Достижения</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Спортклуб</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Кафедра</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">сайт БГУИР</a></li>
             </ul>
           </li>
           <li class="main_nav_dropdown">
             <p class="main_nav_list_item">Соревнования</p>
               <ul class="main_nav_dropdown_content">
-                <li class="main_nav_dropdown_item"><a href="#">Календарь мероприятий</a></li>
-                <li class="main_nav_dropdown_item"><a href="#">Положения и документы</a></li>
-                <li class="main_nav_dropdown_item"><a href="#">Результаты соревнований</a></li>
+                <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Календарь мероприятий</a></li>
+                <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Положения и документы</a></li>
+                <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Результаты соревнований</a></li>
               </ul>
           </di>
           <li class="main_nav_dropdown">
             <p class="main_nav_list_item">Фотогалерея</p>
             <ul class="main_nav_dropdown_content">
-              <li class="main_nav_dropdown_item"><a href="#">Пункт 1</a></li>
-              <li class="main_nav_dropdown_item"><a href="#">Пункт 2</a></li>
-              <li class="main_nav_dropdown_item"><a href="#">Пункт 3</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">2022</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">2021</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">2020</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">2019</a></li>
             </ul>
           </li>
         </ul>
-        <button class="phone_nav_burger"><img src="./assets/burger.svg" alt="burger menu"></button>
+        <div id="burger" class="burger">
+          <span class="phone_nav_burger"></span>
+        </div>
+        <!-- <button class="phone_nav_burger" onclick="openMenu()"><img src="./assets/burger.svg" id="burger" alt="burger menu"></button>
+        <button class="phone_nav_burger_close" onclick="closeMenu()"><img src="./assets/close.svg" id="close" alt="close burger menu"></button> -->
         <div class="main_nav_search">
           <input id="search" placeholder="Поиск" type="text" required class="main_nav_search_input">
           <button class="main_nav_search_button"><img src="./assets/search_icon.svg" class="main_nav_search_button_image"></button>
