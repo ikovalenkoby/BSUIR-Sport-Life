@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
       <nav class="main_nav">
         <ul class="main_nav_list" id="menu">
           <li class="main_nav_dropdown">
-            <p class="main_nav_list_item">Университет</p>
+            <span class="main_nav_list_item">Университет</span>
             <ul class="main_nav_dropdown_content">
               <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">История</a></li>
               <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Достижения</a></li>
@@ -23,15 +23,15 @@
             </ul>
           </li>
           <li class="main_nav_dropdown">
-            <p class="main_nav_list_item">Соревнования</p>
-              <ul class="main_nav_dropdown_content">
-                <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Календарь мероприятий</a></li>
-                <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Положения и документы</a></li>
-                <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Результаты соревнований</a></li>
-              </ul>
-          </di>
+            <span class="main_nav_list_item">Соревнования</span>
+            <ul class="main_nav_dropdown_content">
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Календарь мероприятий</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Положения и документы</a></li>
+              <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">Результаты соревнований</a></li>
+            </ul>
+          </li>
           <li class="main_nav_dropdown">
-            <p class="main_nav_list_item">Фотогалерея</p>
+            <span class="main_nav_list_item">Фотогалерея</span>
             <ul class="main_nav_dropdown_content">
               <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">2022</a></li>
               <li class="main_nav_dropdown_item"><a href="#" class="main_nav_dropdown_item_anchor">2021</a></li>
@@ -43,37 +43,35 @@
         <div id="burger" class="burger">
           <span class="phone_nav_burger"></span>
         </div>
-        <!-- <button class="phone_nav_burger" onclick="openMenu()"><img src="./assets/burger.svg" id="burger" alt="burger menu"></button>
-        <button class="phone_nav_burger_close" onclick="closeMenu()"><img src="./assets/close.svg" id="close" alt="close burger menu"></button> -->
         <div class="main_nav_search">
           <input id="search" placeholder="Поиск" type="text" required class="main_nav_search_input">
-          <button class="main_nav_search_button"><img src="./assets/search_icon.svg" class="main_nav_search_button_image"></button>
+          <button class="main_nav_search_button"><img src="./assets/search_icon.svg" class="main_nav_search_button_image" alt="search icon"></button>
         </div>
       </nav>
       <div class="hero">
         <div class="hero_trapezoid">
-        <img src="./assets/bsuir_logo.svg" height="60" width="122" class="hero_trapezoid_logo" alt="bsuir_logo">
-        <p class="hero_trapezoid_text">Спортивная жизнь <br> БГУИР</p>
-      </div>
+          <img src="./assets/bsuir_logo.svg" height="60" width="122" class="hero_trapezoid_logo" alt="bsuir_logo">
+          <p class="hero_trapezoid_text">Спортивная жизнь БГУИР</p>
+        </div>
       </div>
     </header>
-    <section class="news">
+    <main class="news">
       <div class="news_block">
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_1.png" class="news_block_item_image"><p class="news_block_item_text">БГУИР стал участником Всебелорусской студенческой лыжни</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_2.png" class="news_block_item_image"><p class="news_block_item_text">БГУИР - призер Республиканской универсиады по волейболу. В финальных соревнованиях Республиканской универсиады БГУИР показывает хорошие...</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_3.png" class="news_block_item_image"><p class="news_block_item_text">2 февраля в БГУИР состоялся финальный этап соревнований по мини-футболу среди иностранных студентов</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_4.png" class="news_block_item_image"><p class="news_block_item_text">У БДУІР праходзіць спартакіяда для супрацоўнікаў «Бадзёрасць і здароўе»</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_5.png" class="news_block_item_image"><p class="news_block_item_text">Продолжается 57-я Спартакиада БГУИР - промежуточные итоги</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_6.png" class="news_block_item_image"><p class="news_block_item_text">Студентка БГУИР стала чемпионкой Беларуси по плаванию</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_7.png" class="news_block_item_image"><p class="news_block_item_text">В БГУИР прошёл турнир по настольному теннису</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_8.png" class="news_block_item_image"><p class="news_block_item_text">БГУИР - призёр межвузовских соревнований по шахматам</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_9.png" class="news_block_item_image"><p class="news_block_item_text">В БГУИР прошёл турнир по шахматам</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_10.png" class="news_block_item_image"><p class="news_block_item_text">БГУИР участвует и побеждает в соревнованиях Республиканской универсиады</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_11.png" class="news_block_item_image"><p class="news_block_item_text">Соревнования Республиканской универсиады проходят в БГУИР</p></a></article>
-        <article class="news_block_item"><a href="#"><img src="./assets/news/news_12.png" class="news_block_item_image"><p class="news_block_item_text">Спортивные итоги октября</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_1.png" class="news_block_item_image" alt="news picture 1"><p class="news_block_item_text">БГУИР стал участником Всебелорусской студенческой лыжни</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_2.png" class="news_block_item_image" alt="news picture 2"><p class="news_block_item_text">БГУИР - призер Республиканской универсиады по волейболу. В финальных соревнованиях Республиканской универсиады БГУИР показывает хорошие...</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_3.png" class="news_block_item_image" alt="news picture 3"><p class="news_block_item_text">2 февраля в БГУИР состоялся финальный этап соревнований по мини-футболу среди иностранных студентов</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_4.png" class="news_block_item_image" alt="news picture 4"><p class="news_block_item_text">У БДУІР праходзіць спартакіяда для супрацоўнікаў «Бадзёрасць і здароўе»</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_5.png" class="news_block_item_image" alt="news picture 5"><p class="news_block_item_text">Продолжается 57-я Спартакиада БГУИР - промежуточные итоги</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_6.png" class="news_block_item_image" alt="news picture 6"><p class="news_block_item_text">Студентка БГУИР стала чемпионкой Беларуси по плаванию</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_7.png" class="news_block_item_image" alt="news picture 7"><p class="news_block_item_text">В БГУИР прошёл турнир по настольному теннису</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_8.png" class="news_block_item_image" alt="news picture 8"><p class="news_block_item_text">БГУИР - призёр межвузовских соревнований по шахматам</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_9.png" class="news_block_item_image" alt="news picture 9"><p class="news_block_item_text">В БГУИР прошёл турнир по шахматам</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_10.png" class="news_block_item_image" alt="news picture 10"><p class="news_block_item_text">БГУИР участвует и побеждает в соревнованиях Республиканской универсиады</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_11.png" class="news_block_item_image" alt="news picture 11"><p class="news_block_item_text">Соревнования Республиканской универсиады проходят в БГУИР</p></a></article>
+        <article class="news_block_item"><a href="#"><img src="./assets/news/news_12.png" class="news_block_item_image" alt="news picture 12"><p class="news_block_item_text">Спортивные итоги октября</p></a></article>
       </div>
-      <button class="news_block_read_more_button" id="read_more">Читать дальше</button>
-    </section>
+      <a href="#" class="news_block_read_more_button" id="read_more">Читать дальше</a>
+    </main>
     <footer class="footer">
       <section class="footer_top">
         <img src="./assets/bsuir_logo_white.svg" alt="bsuir_logo" class="footer_bsuir_logo">
