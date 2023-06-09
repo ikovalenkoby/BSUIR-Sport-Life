@@ -453,12 +453,10 @@ a{
     font-size: 14px;
     line-height: 100%;
     margin: 12px 12px 10px 12px;
-    
   }
 
   .news_block_item{
     width: 100%;
-    
   }
 
   .news_block_read_more_button{
@@ -657,7 +655,7 @@ a{
     position: absolute;
     transition: 0.3s ease-in-out;
   }
-  
+
   .phone_nav_burger:before,
   .phone_nav_burger:after {
     content: '';
