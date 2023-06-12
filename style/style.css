@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
   src: url(../fonts/Roboto/Roboto-Bold.woff2);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 @font-face {
@@ -89,14 +89,14 @@ a {
 
 .main_nav {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 1fr min-content;
   margin: 0 75px;
 }
 
 .main_nav_list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
   margin: 24px 0;
 }
 
@@ -193,21 +193,20 @@ a {
   background-position: top;
   background-size: cover;
   margin-bottom: 80px;
-  max-height: 700px;
 }
 
 .hero_trapezoid {
   box-sizing: content-box;
-  border-top: min(50vh, 700px) solid var(--trapezoid-color);
-  border-right: 25vw solid transparent;
+  border-top: 445px solid var(--trapezoid-color);
+  border-right: 255px solid transparent;
   height: 0;
-  width: 23vw;
+  width: 290px;
 }
 
 .hero_trapezoid_text {
   box-sizing: border-box;
-  max-width: calc(23vw - 75px);
-  margin-top: max(-35vh, -450px);
+  max-width: fit-content;
+  margin-top: -320px;
   position: absolute;
   font-style: normal;
   font-weight: 600;
@@ -217,13 +216,54 @@ a {
   margin-left: 75px;
   overflow: hidden;
   text-overflow: clip;
-  max-height: 35vh;
+  word-wrap: break-word;
 }
 
 .hero_trapezoid_logo {
-  margin-top: max(-42vh, -520px);
+  margin-top: -397px;
   position: absolute;
   margin-left: 75px;
+}
+
+@media (min-width: 1440px){
+  .hero {
+    background-image: url(../assets/Hero_desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-bottom: 80px;
+    max-height: 700px;
+  }
+  
+  .hero_trapezoid {
+    box-sizing: content-box;
+    border-top: min(50vh, 700px) solid var(--trapezoid-color);
+    border-right: 25vw solid transparent;
+    height: 0;
+    width: 23vw;
+  }
+  
+  .hero_trapezoid_text {
+    box-sizing: border-box;
+    max-width: calc(23vw - 75px);
+    margin-top: max(-35vh, -450px);
+    position: absolute;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 172.4%;
+    color: #21378d;
+    margin-left: 75px;
+    overflow: hidden;
+    text-overflow: clip;
+    max-height: 35vh;
+  }
+  
+  .hero_trapezoid_logo {
+    margin-top: max(-42vh, -520px);
+    position: absolute;
+    margin-left: 75px;
+  }
 }
 
 .news {
@@ -233,6 +273,7 @@ a {
 .news_block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4,1fr);
   gap: 40px 30px;
   width: 100%;
 }
@@ -261,11 +302,12 @@ a {
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 100%;
   text-align: justify;
   color: var(--color-grey);
+  padding-bottom:12px ;
   margin: 12px;
 }
 
@@ -293,7 +335,7 @@ a {
 }
 
 .footer_top {
-  padding: 98px 75px 41px 75px;
+  padding: 78px 75px 26px 75px;
   display: grid;
   grid-template-columns: min-content 1fr 1fr;
   gap: 44px;
@@ -306,6 +348,16 @@ a {
 
 .footer_anchors_list_item {
   margin-bottom: 15px;
+}
+
+.footer_anchors_list_item:nth-child(1) {
+  margin-top: 11px;
+}
+
+.footer_bsuir_logo{
+  margin-top: 11px;
+  height: 70px;
+  width: 116px;
 }
 
 .footer_anchors_list_item:focus,
@@ -323,7 +375,7 @@ a {
 }
 
 .footer_info_list_item {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
 }
 
 .footer_info_list_item_anchor {
@@ -380,7 +432,7 @@ a {
 
   .main_nav_list {
     gap: 60px;
-    margin: 20px 0;
+    margin: 20px 0 21px 0;
   }
 
   .main_nav_dropdown_content {
@@ -419,13 +471,12 @@ a {
 
   .hero_trapezoid {
     border-top: 271px solid var(--trapezoid-color);
-    border-right: 176px solid transparent;
+    border-right: 155.3px solid transparent;
     height: 0;
-    width: 176px;
+    width: 176.6px;
   }
 
   .hero_trapezoid_text {
-    max-width: 126px;
     margin-top: -216px;
     font-size: 20px;
     line-height: 172.4%;
@@ -433,7 +484,7 @@ a {
   }
 
   .hero_trapezoid_logo {
-    margin-top: -250px;
+    margin-top: -245px;
     margin-left: 50px;
     width: 67.32px;
     height: 33px;
@@ -457,6 +508,7 @@ a {
     font-size: 14px;
     line-height: 100%;
     margin: 12px 12px 10px 12px;
+    padding: 0;
   }
 
   .news_block_item {
@@ -473,7 +525,7 @@ a {
   }
 
   .footer_top {
-    padding: 49px 50px 15px 50px;
+    padding: 38px 50px 7px 50px;
     gap: 28px;
     font-size: 14px;
     line-height: 107.9%;
@@ -482,13 +534,14 @@ a {
   .footer_bsuir_logo {
     width: 67px;
     height: 40px;
+    margin-top: 23px;
   }
 
   .footer_anchors_list_item {
     margin-bottom: 9px;
   }
   .footer_info_list_item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   .footer_info_list_item_vk_logo {
@@ -550,13 +603,12 @@ a {
 
   .hero_trapezoid {
     border-top: 132px solid var(--trapezoid-color);
-    border-right: 86px solid transparent;
+    border-right: 75.64px solid transparent;
     height: 0;
     width: 86px;
   }
 
   .hero_trapezoid_text {
-    max-width: 86px;
     margin-top: -95px;
     font-size: 12px;
     line-height: 129.4%;
@@ -596,7 +648,7 @@ a {
   .news_block_read_more_button {
     font-weight: 500;
     width: 92px;
-    margin: 22px auto;
+    margin: 16px auto;
     padding: 6px 13px;
     font-size: 9px;
     line-height: 107.4%;
@@ -605,10 +657,11 @@ a {
   .footer_bsuir_logo {
     width: 32px;
     height: 19px;
+    margin-top: 18px;
   }
 
   .footer_top {
-    padding: 26px 20px 6px 20px;
+    padding: 19px 20px 1px 20px;
     gap: 16px;
     font-size: 10px;
     line-height: 107.9%;
@@ -617,8 +670,13 @@ a {
   .footer_anchors_list_item {
     margin-bottom: 4px;
   }
+
+  .footer_anchors_list_item:nth-child(1) {
+    margin-top: 7px;
+  }
+
   .footer_info_list_item {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 
   .footer_info_list_item_vk_logo {
@@ -716,7 +774,6 @@ a {
     visibility: hidden;
     opacity: 0;
     text-align: center;
-    transition: all 0.3s ease-in-out;
     padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
