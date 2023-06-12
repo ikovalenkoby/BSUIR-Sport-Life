@@ -196,14 +196,14 @@ a{
 .hero_trapezoid{
   box-sizing: content-box;
   border-top: 50vh solid var(--trapezoid-color);
-  border-right: 23vw solid transparent;
+  border-right: 25vw solid transparent;
   height: 0;
-  width: 20vw;
+  width: 23vw;
 }
 
 .hero_trapezoid_text{
   box-sizing: border-box;
-  max-width: calc(20vw - 75px);
+  max-width: calc(23vw - 75px);
   margin-top: -35vh;
   position: absolute;
   font-style: normal;
@@ -552,7 +552,7 @@ a{
   }
 
   .hero_trapezoid_text{
-    max-width:min-content;
+    max-width:86px;
     margin-top: -95px;
     font-size: 12px;
     line-height: 129.4%;
