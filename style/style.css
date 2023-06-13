@@ -205,6 +205,9 @@ a {
   height: 445px;
   clip-path: polygon(0 0, 100% 0, 53% 100%, 0% 100%);
   background: linear-gradient(0deg, rgba(26, 47, 94, 0.05), rgba(26, 47, 94, 0.05)), #FFFFFF;
+  margin: -2px;
+  border-top: 2px solid var(--trapezoid-color);
+  border-right: none;
 }
 
 .hero_trapezoid_text {
