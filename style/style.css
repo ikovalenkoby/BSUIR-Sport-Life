@@ -71,8 +71,6 @@ a {
   cursor: pointer;
 }
 
-
-
 .main {
   font-family: 'Roboto', 'Open Sans', 'Arial', sans-serif;
   min-height: 100%;
@@ -81,7 +79,7 @@ a {
 }
 
 .header {
-  text-align: justify;
+  text-align: left;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -102,6 +100,12 @@ a {
   margin: 24px 0;
 }
 
+.main_nav_list.space{
+  gap: 0px;
+  justify-content: space-between;
+  margin-right: 20px ;
+}
+
 .main_nav_list_item {
   display: block;
   cursor: default;
@@ -116,7 +120,7 @@ a {
   display: none;
   position: absolute;
   background-color: #ffffff;
-  min-width: 10vw;
+  min-width: 181px;
   z-index: 1;
   padding-top: 24px;
 }
@@ -149,7 +153,6 @@ a {
 }
 
 .main_nav_search {
-  box-sizing: border-box;
   height: 45px;
   display: flex;
   margin: 15px 0;
@@ -200,62 +203,37 @@ a {
 .hero_trapezoid {
   width: 545px;
   height: 445px;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 47% 100%);
+  clip-path: polygon(0 0, 100% 0, 53% 100%, 0% 100%);
   background: linear-gradient(0deg, rgba(26, 47, 94, 0.05), rgba(26, 47, 94, 0.05)), #FFFFFF;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-  
 }
 
 .hero_trapezoid_text {
-  transform: scale(-1,1);
-  margin-top: 125px;
-  box-sizing: border-box;
-  max-width: fit-content;
-  position: absolute;
+  margin: 17.05px 0 0 75px;
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
   line-height: 172.4%;
   color: #21378d;
-  margin-left: 165.888px;
   overflow: hidden;
   text-overflow: clip;
 }
 
 .hero_trapezoid_logo {
-  transform: scale(-1,1);
-  margin-top: 48px;
-  position: absolute;
-  margin-left: 348px;
+  margin: 48px 0 0 75px;
 }
 
 @media (min-width: 1440px){
-  .hero {
-    background-image: url(../assets/Hero_desktop.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    margin-bottom: 80px;
-    max-height: 700px;
-  }
-  
   .hero_trapezoid {
-    height: min(50vh,483px);
-    width:min(40vw, 592px);
+    height: 483px;
+    width: 592px;
   }
-  
+
   .hero_trapezoid_text {
-    margin-top: 127px;
-    margin-left: 212.888px;
-    overflow: hidden;
-    text-overflow: clip;
-    max-height: 356px;
-    max-width: 351px;
+    margin: 19.05px 0 0 75px;
   }
-  
+
   .hero_trapezoid_logo {
-    margin-top: 50px;
-    margin-left: 395px;
+    margin: 50px 0 0 75px;
   }
 }
 
@@ -314,7 +292,6 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
-  justify-content: center;
   background: var(--color-dark-blue);
 }
 
@@ -353,8 +330,8 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   width: 116px;
 }
 
-.footer_anchors_list_item:focus,
-.footer_anchors_list_item:hover {
+.footer_anchors_list_item_anchor:focus,
+.footer_anchors_list_item_anchor:hover {
   text-decoration: underline;
 }
 
@@ -483,24 +460,19 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 
   .hero_trapezoid_text {
-    margin-top: 73px;
+    margin: 29px 0 0 50px;
     font-size: 20px;
     line-height: 172.4%;
-    margin-left: 103.113px;
-    max-width: 206px;
-    max-height: 216px;
   }
 
   .hero_trapezoid_logo {
-    margin-top: 26px;
-    margin-left: 214.688px;
+    margin: 26px 0 0 50px;
     width: 67.32px;
     height: 33px;
   }
 
   .news {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 50px;
   }
 
   .news_block {
@@ -615,24 +587,19 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 
   .hero_trapezoid_text {
-    margin-top: 37px;
+    margin: 8.69px 0 0 20px;
     font-size: 12px;
     line-height: 129.4%;
-    margin-left: 34.313px;
-    max-height: 95px;
-    max-width: 110px;
   }
 
   .hero_trapezoid_logo {
-    margin-top: 12px;
-    margin-left: 108.387px;
+    margin: 12px 0 0 20px;
     width: 33.27px;
     height: 16.31px;
   }
 
   .news {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
   }
 
   .news_block {
@@ -787,6 +754,18 @@ transform: matrix(-1, 0, 0, 1, 0, 0);
     grid-template-columns: 1fr;
     grid-template-rows: repeat(15, 1fr);
     gap: 0;
+  }
+
+  .main_nav_list.scroll{
+    left: auto;
+    height: auto;
+    right: auto;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    top: 0;
+    bottom: 0;
+    margin-top: -14px;
+    margin-left: -20px;
   }
 
   .main_nav_list.overlay {

@@ -1,14 +1,21 @@
+const mybutton = document.getElementById('myBtn');
+const closeMenuButton = document.getElementById('close');
+const burgerMenu = document.getElementById('burger');
+const overlay = document.getElementById('menu');
 
-let mybutton = document.getElementById("myBtn");
-let closeMenuButton = document.getElementById("close");
+if (overlay.children.length > 3) {
+  overlay.classList.toggle('space');
+}
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    mybutton.style.display = 'block';
   } else {
-    mybutton.style.display = "none";
+    mybutton.style.display = 'none';
   }
 }
 
@@ -17,11 +24,10 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-var burgerMenu = document.getElementById('burger');
-
-var overlay = document.getElementById('menu');
-
-burgerMenu.addEventListener('click', function() {
-  this.classList.toggle("close");
-  overlay.classList.toggle("overlay");
+burgerMenu.addEventListener('click', function () {
+  this.classList.toggle('close');
+  overlay.classList.toggle('overlay');
+  if (overlay.children.length > 3) {
+    overlay.classList.toggle('scroll');
+  }
 });
