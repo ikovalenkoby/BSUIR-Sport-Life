@@ -384,6 +384,11 @@ a {
   background: none;
 }
 
+.anchor_img{
+  height: 40px;
+  width: 40px;
+}
+
 @media (min-width: 1371px){
   .container{
     width: 1370px;
@@ -404,8 +409,14 @@ a {
     height: 30px;
     width: 30px;
     bottom: 37px;
-    right: 27px;
+    right: 12px;
   }
+
+  .anchor_img{
+    height: 30px;
+    width: 30px;
+  }
+
   .header {
     font-size: 16px;
     line-height: 19px;
@@ -540,9 +551,15 @@ a {
   .anchor {
     height: 20px;
     width: 20px;
-    bottom: 40px;
-    right: 20px;
+    bottom: 20px;
+    right: 10px;
   }
+
+  .anchor_img{
+    height: 20px;
+    width:20px;
+  }
+
   .main_nav {
     display: flex;
     justify-content: space-between;
