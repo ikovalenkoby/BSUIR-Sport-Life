@@ -3,10 +3,6 @@ const closeMenuButton = document.getElementById('close');
 const burgerMenu = document.getElementById('burger');
 const overlay = document.getElementById('menu');
 
-if (overlay.children.length > 3) {
-  overlay.classList.toggle('space');
-}
-
 window.onscroll = function () {
   scrollFunction();
 };
