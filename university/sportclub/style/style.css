@@ -141,13 +141,19 @@
 }
 
 @media (max-width: 1250px) {
+  .breadcrumb{
+    margin-top: -10px;
+  }
+
   .main_heading{
     font-size: 38px;
     line-height: 41.8px;
   }
+
   .main_content{
     margin: 0 50px;
   }
+
   .main_text,
   .secondary_text,
   .contact_text,
@@ -168,6 +174,10 @@
 
 
 @media (max-width: 767px) {
+  .breadcrumb{
+    margin-top: -5px;
+  }
+
   .main_content{
     margin: 0 20px;
   }
@@ -177,6 +187,8 @@
     margin: 20px auto;
   }
 
+  .breadcrumb_item_anchor,
+  .breadcrumb,
   .main_text,
   .secondary_text,
   .contact_text,
