@@ -85,7 +85,7 @@
   line-height: 30px;
   color: var(--main-text);
   text-align: justify;
-  width: calc(100vw - 21px - 150px);
+  width: 100%;
   white-space: nowrap;
   border-spacing:20px 0;
 }
@@ -154,17 +154,14 @@
   .interests,
   .second_text,
   .events,
-  .commands{
-    font-size: 16px;
-    line-height: 24px;
-  }
-
+  .commands,
   .contact_info_table{
     font-size: 16px;
     line-height: 24px;
   }
   .table_container{
     overflow: scroll;
+    max-width: calc(100vw - 121px);
   }
 }
 
@@ -186,26 +183,16 @@
   .interests,
   .second_text,
   .events,
-  .commands{
-    font-size: 14px;
-    line-height: 21px;
-  }
-
+  .commands,
   .contact_info_table{
     font-size: 14px;
     line-height: 21px;
   }
 
-  .contact_info_table_cell_1,
-  .contact_info_table_cell_2,
-  .contact_info_table_cell_3,
-  .contact_info_table_cell_4{
-    width: auto;
-  }
-
   .table_container{
     margin-left: 10px;
     overflow: scroll;
+    max-width: calc(100vw - 50px);
   }
 
 }
