@@ -1,5 +1,10 @@
 :root{
   --main-text:#1b2f5b;
+  --href-text:#1d52c7;
+}
+
+html{
+  font-size: 18px;
 }
 
 .breadcrumb{
@@ -12,7 +17,7 @@
 }
 
 .breadcrumb_item_anchor{
-  color: #82168e;
+  color: var(--href-text);
   font-size: 16px;
 }
 
@@ -25,74 +30,66 @@
   margin: 0 75px;
 }
 
-.main_heading{
+.main_content p{
+  color: var(--main-text);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-indent: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.main_content h1{
   text-align: center;
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 2.778rem;
+  font-weight: 700;
   color: #333366;
   margin: 70px auto;
 }
 
-.main_text{
+.main_content h2{
+  text-align: center;
+  font-size: 2.222rem;
+  font-weight: 700;
+  color: #333366;
+  margin: 70px auto;
+}
+
+.main_content span{
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
   color: var(--main-text);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-indent: 21px;
-  margin-bottom: 40px;
+}
+
+.main_content a{
+  color: var(--href-text);
+  font-weight: 700;
+}
+
+.main_content a:hover,
+.main_content a:focus{
+  text-decoration: underline;
+}
+
+.interests li::before,
+.commands li::before{
+  content: "- ";
 }
 
 .portrait{
-  margin-top: -40px;
   display: block;
-}
-
-.secondary_text{
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 27px;
-  color: var(--main-text);
-  margin-bottom: 40px;
-}
-
-.contact_info{
-  margin-top: -35px;
-}
-
-.contact_text{
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 27px;
-  color: var(--main-text);
 }
 
 .vk_logo{
   margin: 4px 0;
 }
 
-.secondary_text_href{
-  color: blue;
-  font-weight: 700;
-}
-
-.secondary_text_href:hover,
-.secondary_text_href:focus{
-  text-decoration: underline;
-}
-
-@media (min-width: 1371px){
-  .main_content{
-    padding: 0 75px;
-    margin: 0 auto;
-  }
-}
-
 .contact_info_table{
-  font-size: 20px;
+  font-size: 1.111rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.667rem;
   color: var(--main-text);
   text-align: justify;
   width: 100%;
@@ -101,7 +98,6 @@
 }
 
 .table_container{
-  margin-bottom: 25px;
   margin-left: 21px;
   overflow: auto;
 }
@@ -111,79 +107,65 @@
 }
 
 .interests{
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.5rem;
   color: var(--main-text);
-  margin-bottom: 25px;
-}
-
-.interests_item::before {
-  content: "- ";
-}
-
-.second_text{
-  color: var(--main-text);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  text-indent: 21px;
 }
 
 .events{
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.5rem;
   color: var(--main-text);
   margin-left: 21px;
-  margin-bottom: 25px;
 }
 
 .commands{
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.5rem;
   color: var(--main-text);
 }
 
-.commands_item::before {
-  content: "- ";
+.footer_top_container{
+  margin-top: 1rem;
+}
+
+@media (min-width: 1371px){
+  .main_content{
+    padding: 0 75px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 1250px) {
-  .breadcrumb{
-    margin-top: -10px;
+  html{
+    font-size: 16px;
   }
 
-  .main_heading{
-    font-size: 38px;
-    line-height: 41.8px;
+  .breadcrumb{
+    margin-top: -10px;
   }
 
   .main_content{
     margin: 0 50px;
   }
 
-  .main_text,
-  .secondary_text,
-  .contact_text,
-  .interests,
-  .second_text,
-  .events,
-  .commands,
-  .contact_info_table{
-    font-size: 16px;
-    line-height: 24px;
+  .main_content h1{
+    margin: 35px auto;
   }
+
   .table_container{
     overflow: scroll;
     max-width: calc(100vw - 121px);
   }
 }
 
-
-
 @media (max-width: 767px) {
+  html{
+    font-size: 14px;
+  }
   .breadcrumb{
     margin-top: -5px;
   }
@@ -193,22 +175,7 @@
   }
 
   .main_heading{
-    font-size: 40px;
     margin: 20px auto;
-  }
-
-  .breadcrumb_item_anchor,
-  .breadcrumb,
-  .main_text,
-  .secondary_text,
-  .contact_text,
-  .interests,
-  .second_text,
-  .events,
-  .commands,
-  .contact_info_table{
-    font-size: 14px;
-    line-height: 21px;
   }
 
   .table_container{
@@ -216,13 +183,12 @@
     overflow: scroll;
     max-width: calc(100vw - 50px);
   }
-
 }
 
 @media (max-width: 500px){
   .contact_info_table{
-    font-size: 12px;
-    line-height: 21px;
+    font-size: 0.857rem;
+    line-height: 1.286rem;
     margin-left: 5px;
   }
 }
